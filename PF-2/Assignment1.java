@@ -1,4 +1,5 @@
-/*
+/**
+ * 
  * program to print diamond pyramid using modular approach
  * the array counting has been done from index 1 instead of 0 
  * currentRow= defines the current row of the pyramid and 
@@ -10,6 +11,10 @@ package PF2;
 public class Assignment1 {
 
 	// this method returns array of string
+	/**
+	 * 
+	 * @return- the resultant pyramid call space funtion and number function
+	 */
 	public String[] printPyramid() {
 		int maxNum = 5;
 
@@ -29,6 +34,13 @@ public class Assignment1 {
 
 	// this method will send the spaces string
 
+	/**
+	 * @param currentRow
+	 *            - is the current row where the curssor is
+	 * @param maxNum
+	 *            -is the max number to print
+	 * @return- string of spaces required in current row
+	 */
 	public String spaces(int currentRow, int maxNum) {
 		if (currentRow > maxNum) {
 			currentRow = 2 * maxNum - 1 - currentRow + 1;
@@ -45,6 +57,13 @@ public class Assignment1 {
 
 	// this method will send the number string
 
+	/**
+	 * @param currentRow
+	 *            - is the current row where the curssor is
+	 * @param maxNum
+	 *            -is the max number to print in the pyramid
+	 * @return- string of number required in current row
+	 */
 	public String number(int currentRow, int maxNum) {
 		String resultNum = "";
 
@@ -69,11 +88,5 @@ public class Assignment1 {
 		return resultNum;
 	}
 
-	public static void main(String s[]) {
-		Assignment1 a = new Assignment1();
-		String re[] = a.printPyramid();
 
-		for (int i = 1; i < re.length; i++)
-			System.out.println(re[i]);
-	}
 }

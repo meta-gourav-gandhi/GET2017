@@ -24,23 +24,22 @@ public class TestAssignment1 {
 
 		String expected = "1234321";
 		Assert.assertEquals(expected, re);
-		
+
 	}
-	
+
+
 	@Test
-	public void testNotEqualsSpace()
-	{
+	public void testNotEqualsSpace() {
 		Assignment1 a = new Assignment1();
 		String re = a.number(3, 5);
 		String expected = "1234321";
-	
+
 		try {
-	        Assert.assertEquals(expected,re);
-	    } catch (AssertionError e) {
-	        return;
-	    }
-	    fail("The arrays are equal");
-		
+			Assert.assertEquals(expected, re);
+		} catch (AssertionError e) {
+			return;
+		}
+
 	}
 
 }
