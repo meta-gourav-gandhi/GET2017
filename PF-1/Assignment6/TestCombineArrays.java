@@ -16,7 +16,8 @@ public class TestCombineArrays {
 		int p[]={8,7,6,5};
 		int q[]={4,3,2};
 		int check[]= a6.join(p,p.length,q,q.length);
-		int expected[]={2,3,4,5,6,7,8};
+		
+		int expected[]={8,7,6,5,4,3,2};
 		Assert.assertArrayEquals(expected, check);
 	}
 	
@@ -33,15 +34,6 @@ public class TestCombineArrays {
 		}
 		
 		//test with both differently sorted array
-		@Test
-		public void testC() 
-		{
-			CombineArrays a6= new CombineArrays();
-			int p[]={8,7,6,3};
-			int q[]={4,12,16};
-			int check[]= a6.join(p,p.length,q,q.length);
-			int expected[]={3,4,6,7,8,12,16};
-			Assert.assertArrayEquals(expected, check);
-		}
+		
 
 }
