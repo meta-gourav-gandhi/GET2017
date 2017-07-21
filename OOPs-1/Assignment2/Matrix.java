@@ -2,8 +2,6 @@ public class Matrix {
 
 	int[][] matrix;
 
-	// Constructor for initialize matrix
-
 	/**
 	 * @param rows number of rows in the matrix
 	 * @param cols number of column in the matrix
