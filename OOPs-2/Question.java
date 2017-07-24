@@ -24,7 +24,8 @@ public class Question implements Comparable<Question> {
 	 * 
 	 */
 	public String[][] read(String filePath) {
-		String questions[][] = new String[5][];
+		int totalQuestion= numberOfQuestion(filePath); 
+		String questions[][] = new String[totalQuestion][];
 		int index = 0;
 		try {
 			FileInputStream fstream = new FileInputStream(filePath);
@@ -40,6 +41,26 @@ public class Question implements Comparable<Question> {
 			return questions;
 		}
 	}
+	/**
+	 * @param filepath path where questions are stored
+	 * @return the number of question
+	 */
+	public int numberOfQuestion(String filepath){
+		int index = 0;
+		try {
+			FileInputStream fstream = new FileInputStream(filepath);
+			BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+			String str = "";
+			while ((str = br.readLine()) != null) {
+					index++;
+			}
+			br.close();
+			
+		} catch (Exception e) {
+			
+		}
+		return index;
+	}
 
 	/**
 	 * @param participant will give the index of the participant
@@ -53,8 +74,7 @@ public class Question implements Comparable<Question> {
 			}
 			if ("(Type) Single Select".equals(question[index][1])) {
 				int answer = scan.nextInt();
-				while (answer != 1 && answer != 2 && answer != 3 && answer != 4
-						&& answer != 5) {
+				while (answer<=1 & answer>=5) {
 					System.out.print("Enter correct option from 1 to 5");
 					answer = scan.nextInt();
 				}
