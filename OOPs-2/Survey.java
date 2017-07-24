@@ -14,6 +14,8 @@ public class Survey {
 
 		Question obj = new Question();
 		Scanner scan = new Scanner(System.in);
+		final String reportB="C:/Users/User7/Desktop/Report-B.txt";
+		final String reportA="C:/Users/User7/Desktop/Report-A.txt";
 
 		String question[][] = {};
 		System.out.println("Enter number of users to participate in survey :- ");
@@ -25,7 +27,7 @@ public class Survey {
 		for (int index = 0; index < noOfUsers; index++) {
 			obj.getInput(index + 1, question);
 		}
-		question = obj.read("C:/Users/User7/Desktop/Report-B.txt");
+		question = obj.read(reportB);
 		
 		int percentage[] = new int[6];
 		
@@ -38,12 +40,12 @@ public class Survey {
 			if (percentage[index] != 0) {
 
 				percentage[index] = (int) ((percentage[index] / (float) noOfUsers) * 100);
-				obj.write(index + " - " + percentage[index] + "%","C:/Users/User7/Desktop/Report-A.txt");
-				obj.write("-1", "C:/Users/User7/Desktop/Report-A.txt");
+				obj.write(index + " - " + percentage[index] + "%",reportA);
+				obj.write("-1", reportA);
 			} 
 			else {
-				obj.write(index + " - " + percentage[index] + "%","C:/Users/User7/Desktop/Report-A.txt");
-				obj.write("-1", "C:/Users/User7/Desktop/Report-A.txt");
+				obj.write(index + " - " + percentage[index] + "%",reportA);
+				obj.write("-1", reportA);
 			}
 		}
 		
