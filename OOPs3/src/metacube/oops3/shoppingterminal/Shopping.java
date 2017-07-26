@@ -1,5 +1,5 @@
 /**
- * 
+ * This is the main
  */
 package metacube.oops3.shoppingterminal;
 
@@ -17,13 +17,11 @@ public class Shopping {
 	public static void main(String args[]){
 		
 		Scanner scan=new Scanner(System.in);
-		Shopping obj=new Shopping();
-		
 		FileHandling handleFile=new FileHandling();
 		
-		HashMap<Integer,Product> product =handleFile.printList("ProductList.txt");
-		HashMap<Integer,ProductPromotion>hashProductPromotion=handleFile.printProductPromo("ProductPromo.txt");
-		List <OrderPromotion> orderPromotionList=handleFile.printOrderPromo("OrderPromo.txt");
+		HashMap<Integer,Product> product =handleFile.printList("ProductList.csv");
+		HashMap<Integer,ProductPromotion>hashProductPromotion=handleFile.printProductPromo("ProductPromo.csv");
+		List <OrderPromotion> orderPromotionList=handleFile.printOrderPromo("OrderPromo.csv");
 		
 		System.out.println("Enter the number of production you want to buy");
 		int numOfProducts= scan.nextInt();
@@ -61,8 +59,5 @@ public class Shopping {
 			Bill b=new Bill();
 			b.calculate(orderList,hashProductPromotion,orderPromotionList);
 	}
-	
-
-	
 	
 }

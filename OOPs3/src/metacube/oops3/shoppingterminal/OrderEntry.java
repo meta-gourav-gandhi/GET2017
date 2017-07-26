@@ -14,25 +14,15 @@ public class OrderEntry {
 	String name;
 	double price;
 	
-	
 
-	/**
-	 * @param name the name to set
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
-	 * @return the price
-	 */
 	public double getPrice() {
 		return price;
 	}
 
-	/**
-	 * @param price the price to set
-	 */
 	public void setPrice(double price) {
 		this.price = price;
 	}

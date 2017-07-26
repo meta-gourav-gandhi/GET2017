@@ -13,10 +13,6 @@ public class Product {
 	String productName;
 	Double productPrice;
 	 
-	Product(){
-		
-	}
-	
 	public  void setId(int id){
 		this.productId=id;
 	}
