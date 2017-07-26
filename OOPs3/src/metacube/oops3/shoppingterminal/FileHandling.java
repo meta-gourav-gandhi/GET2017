@@ -42,7 +42,6 @@ public class FileHandling {
 					product.setName(input[1]);
 					product.setPrice(Double.parseDouble(input[2]));
 					hashProduct.put(Integer.parseInt(input[0]), product);
-
 				}
 	
 			System.out.println();
@@ -96,7 +95,6 @@ public class FileHandling {
 
 		}
 		return orderPromotionList;
-
 	}
    
 
