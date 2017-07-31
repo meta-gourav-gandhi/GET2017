@@ -1,5 +1,9 @@
 package socialnetwork;
 
+/**
+ * @author gourav gandhi
+ *
+ */
 public interface Node {
 	
 	public void createNode(User obj, String name, String id);
