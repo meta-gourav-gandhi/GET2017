@@ -2,10 +2,6 @@ body{
   margin: 5%;
 }
 
-.block{
-	
-}
-
 div{
     width: 100px;
     height: 100px;
@@ -16,14 +12,14 @@ div{
 
 
 #block1:hover{
-  transform:rotate(360deg);
-  background-color: #c56df3;
+    transform:rotate(360deg);
+    background-color: #c56df3;
 
 }
 
 #block2:hover{
-  background-color: #c56df3;
-  transform: scale(1.5,1.5);
+	background-color: #c56df3;
+	transform: scale(1.5,1.5);
 }
 
 #block3:hover{
