@@ -1,0 +1,177 @@
+body{
+  margin: 0%;
+  font-family: sans-serif;
+}
+#navigation{
+background-color:#2D3E50;
+padding: 20px;
+}
+#title{
+  color:#FFFFFF;
+  font-weight:lighter;
+}
+.tab{
+  float: right;
+  margin-right: 20px;
+}
+#active{
+  color:#FFFFFF;
+}
+.tab a{
+	color: #328DD6;
+    text-decoration: none;
+}
+a:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: .5s;
+
+}
+#banner{
+  background-color: #328DD6;
+  height:500px;
+
+}
+#bannercontainer{
+      padding-top: 120px;
+}
+#bannertext{
+  text-align: center;
+  color: white;
+  border: 3px solid white;
+  padding: 50px;
+  font-weight: 300;
+  border-radius: 5px;
+  margin: 0%;
+  margin-left: 28%;
+  margin-right: 28%;
+}
+#intro{
+	color: #FFFFFF;
+	font-weight:lighter;
+	text-align:center;
+}
+#bannerbutton{
+
+	text-align:center;
+}
+#bannerbutton button{
+	color:#328DD6;
+	font-size:20px;
+	padding:10px;
+	padding-left:30px;
+	padding-right:30px;
+	margin:2px;
+	border-style:none;
+	border-radius:8px;
+	background-color:#FFFFFF;
+
+}
+#introduction{
+
+  display:block;
+
+}
+h3{
+	text-align:center;
+	color: #2D3E50;
+	font-weight:lighter;
+	margin-top:2%;
+	font-size:25px;
+  letter-spacing: 2px;
+  
+}
+#block{
+	display:flex;
+	margin:3%;
+}
+.blockheader{
+	color:#328DD6;
+	font-size:20px;
+}
+.blockcontent{
+	color:#7F8C8D;
+	font-weight:lighter;
+  margin-right: 5%;
+}
+#bar{
+	display:flex;
+	background-color:#2D3E50;
+
+}
+#imgsection{
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left:10%;
+	margin-right:10%;
+}
+#imgsection img{
+	width:100%;
+}
+#barcontent{
+	margin-top:5%;
+}
+#barheader{
+	color:#FFFFFF;
+	font-weight:lighter;
+	font-size:20px;
+	margin-bottom:20px;
+	letter-spacing:2.5px;
+}
+#bardetails{
+	color:#AAAA96;
+
+}
+#bottomcontent{
+	display:flex;
+  margin-bottom: 50px;
+}
+#leftcoloum{
+	margin-left:8%;
+	margin-right:2%;
+}
+#formbutton button{
+
+	color:#FFFFFF;
+	font-size:20px;
+	padding:5px;
+	padding-left:25px;
+	padding-right:25px;
+	margin-top:10px;
+	border-style:none;
+	border-radius:5px;
+	background-color:#328DD6;
+
+}
+input{
+	border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width:550px;
+    height: 35px;
+    margin-bottom:1px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#bottomcontent h4{
+	color:#2D3E50;
+  margin-bottom: 2px;
+}
+
+#rightcoloum p{
+	color:#AAAA96;
+}
+i{
+  margin-right: 10px;
+}
+#footer{
+  height: 10%;
+  background-color: black;
+}
+#footercontent{
+  text-align: center;
+  color: #AAAA96;
+  padding-top: 2%;
+  display: block;
+}
