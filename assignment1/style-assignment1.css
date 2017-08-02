@@ -1,0 +1,29 @@
+body{
+	background-color : #e3ebed;
+	padding : 10px;
+}
+
+#container{
+	background-color : white;
+	padding: 1%;
+	height: auto;
+ }
+ 
+#header{
+	background-color: #eef6g8;
+	border: solid #adc9e1;
+	color: #91b5d7;
+	padding : 1%;
+	margin: auto;
+}
+#content{
+	display:flex;
+}
+#details{
+	
+	width: 70%;
+}
+#imgsection{
+	margin: 20px;
+	width: 20%;
+}
