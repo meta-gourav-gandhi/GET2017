@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 2</title>
+</head>
+<body>
+	<div >
+		<p id="demo"></p>
+		<button onclick="getLocation()">Find me in Google Maps</button>
+	</div>
+	<div id="mapholder"></div>
+	
+	<script>
+		var x = document.getElementById("demo");
+
+		function getLocation() {
+			if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				x.innerHTML = "Geolocation is not supported by the browser";
+			}
+		}
+
+		function showPosition(position) {
+			x.innerHTML = "Latitude : "+position.coords.latitude+
+				"<br/>Longitude : "+position.coords.longitude;
+
+			var latlon = position.coords.latitude+","+position.coords.longitude;
+
+			var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
+			document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+		}
+
+		
+	</script>
+</body>
+</html>
