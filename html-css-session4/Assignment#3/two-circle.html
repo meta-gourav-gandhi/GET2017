@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Two Circle</title>
+</head>
+<body>
+<canvas id="mycanvas" width="500" height="500" ></canvas>
+
+<script>
+var canvas = document.getElementById("mycanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.fillStyle = "#9e2f72";
+ctx.arc(200,200,50,0,2*Math.PI);
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.fillStyle = "#FFFFFF";
+ctx.arc(200,200,35,0,2*Math.PI);
+ctx.fill();
+
+
+</script>
+
+</body>
+</html>
