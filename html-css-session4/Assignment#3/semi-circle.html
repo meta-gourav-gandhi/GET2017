@@ -1,0 +1,29 @@
+<html>
+<head><title>semi-circle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.fillStyle="#2e94d1";
+ctx.arc(200,200,40,.5*Math.PI,1.5*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle="#979b9c";
+ctx.arc(200,200,40,1.5*Math.PI,.5*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle="#FFFFFF";
+ctx.arc(200,200,30,1.5*Math.PI,.5*Math.PI);
+ctx.fill();
+
+</script>
+</body>
+</html>

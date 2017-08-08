@@ -1,0 +1,23 @@
+<html>
+<head><title>circleplus</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.fillStyle = "yellow";
+ctx.arc(200,200,150,0,2*Math.PI);
+ctx.fill();
+
+ctx.fillStyle="#FFFFFF";
+ctx.fillRect(80,180,240,40);
+ctx.fillRect(180,80,40,240);
+
+
+</script>
+</body>
+</html>
