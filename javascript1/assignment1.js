@@ -89,8 +89,8 @@ function checkMessage(){
 	}
 	else
 	{
-		msg.value="";
-		alert('Please enter charactrs upto 250 only');  
+		msg.value=msg.value.substring(0,250);
+		alert('Your message has been trimed to 250  characters ');   
 		msg.focus();  
 		return false;  
 	}
