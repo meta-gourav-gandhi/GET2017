@@ -31,7 +31,7 @@ function checkName(){
 function checkEmail(){
 	
 	var mail = document.getElementById("userEmail");
-	var pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,})$/;
+	var pattern=/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 	if(mail.value.match(pattern))
 	{
 		return true;
