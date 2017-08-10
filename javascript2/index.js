@@ -1,6 +1,6 @@
 function callStack(){
 	
-	document.getElementById("includecontent").innerHTML='<object type="text/html" data="stack.html" width="100%" height="300px" ></object>';
+	document.getElementById("includecontent").innerHTML='<object type="text/html" data="stack.html" width="100%" height="500px" ></object>';
 }
 function callQueue(){
 	
@@ -8,7 +8,7 @@ function callQueue(){
 }
 function callSingly(){
 	
-	document.getElementById("includecontent").innerHTML='<object type="text/html" data="singly.html"  width="100%" height="300px" ></object>';
+	document.getElementById("includecontent").innerHTML='<object type="text/html" data="singly.html"  width="100%" height="500px" ></object>';
 }
 function callDoubly(){
 	

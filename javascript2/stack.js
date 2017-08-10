@@ -30,6 +30,8 @@ function MyStack(){
 					entity.pre=this.top;
 					this.top=entity;
 			}
+			
+			document.getElementById("result").innerHTML= document.getElementById("content").value + " has been added to the list";
 		}
 		else
 		{

@@ -6,8 +6,8 @@ function enquedata(){
 	var data= document.getElementById("content");
 	if(data.value!=""){
 	myqueue[++right]=data.value;
-	data.value="";
-	document.getElementById("result").innerHTML ="data has been added";
+	
+	document.getElementById("result").innerHTML= document.getElementById("content").value + " has been added to the ";
 	}
 	else{
 		document.getElementById("result").innerHTML="Please enter some value.";

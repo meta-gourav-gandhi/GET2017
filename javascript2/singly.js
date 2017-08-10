@@ -5,8 +5,7 @@ function node(){
 	entry=document.getElementById("content");
 	this.data=entry.value;
 	this.next=null;
-	entry.value="";
-	entry.focus();
+	
 		
 }
 
@@ -33,25 +32,29 @@ function SinglyLinkedList(){
 					}
 				this.temp.next=entity;
 			}
+			
+			document.getElementById("result").innerHTML= document.getElementById("content").value + " has been added to the list";
+			
 		}
 		else
 		{
 			document.getElementById("result").innerHTML="Please enter any value."
 		}
-	
+	entry.value="";
+	entry.focus();
 }
 	this.printData=function(){
-	
+		var counter=1;
 		if(this.start!=null){
 			this.temp=this.start;
 			var text="";
 			while(this.temp.next!=null){
-				text += this.temp.data+ " ";
+				text += counter++ + "<span> -->  </span> " + this.temp.data+ " <br> ";
 				this.temp=this.temp.next;
 			}
-			text+=this.temp.data;
-			document.getElementById("result").innerHTML ="The elements are :- " + text;
-
+			text+= counter++ + "<span> -->  </span> " + this.temp.data;
+			document.getElementById("result").innerHTML ="The elements are :- <br> " + text;
+				
 			}
 			else{
 				document.getElementById("result").innerHTML="there are no values in list."
