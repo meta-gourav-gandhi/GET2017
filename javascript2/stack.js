@@ -5,8 +5,7 @@ function node(){
 	entry=document.getElementById("content");
 	this.data=entry.value;
 	this.pre=null;
-	entry.value="";
-	entry.focus();
+	
 		
 }
 
@@ -37,6 +36,9 @@ function MyStack(){
 		{
 			document.getElementById("result").innerHTML="Please enter any value."
 		}
+		
+		entry.value="";
+	entry.focus();
 	
 }
 	this.printData=function(){
@@ -45,11 +47,11 @@ function MyStack(){
 			this.temp=this.top;
 			var text="";
 			while(this.temp.pre!=null){
-				text += this.temp.data+ " ";
+				text += this.temp.data+ " <br> ";
 				this.temp=this.temp.pre;
 			}
 			text+=this.temp.data;
-			document.getElementById("result").innerHTML ="The elements are :- " + text;
+			document.getElementById("result").innerHTML ="The elements are :- <br> " + text;
 
 			}
 			else{
