@@ -18,3 +18,6 @@ function callCheck(){
 	
 	document.getElementById("includecontent").innerHTML='<object type="text/html" data="check.html"   width="100%" height="300px"></object>';
 }
+window.onload=function(){
+	callSingly();
+}
