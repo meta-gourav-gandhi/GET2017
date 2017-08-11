@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>HTML 5</title>
+
+<script src="contact.js">
+</script>
+
+</head>
+<body>
+      <table align=center border="0" width="85%" height="10%">
+		<tr>
+		
+		<td align=left width="50%"><img src="images/HTMLlogo.png" height="50px"></td>
+			<td align=right width="50%"> <a href="#" onclick="callHome()" id="home">Home page</a></td>
+			<td align=right width="50%"><a href="#">About</a></td>
+			<td align=right width="50%"> <a href="#">Product</a></td>
+			<td align=right width="50%"> <a href="#">Gallery</a></td>
+			<td align=right width="50%"> <a href="#" onclick="callContact()" id="contactUs">Contact</a></td>	
+			<td align=right width="50%"></td>
+		</tr>
+	</table>
+	<hr>
+
+<table width ="50%"  align=center border="0">
+     <tr><td colspan = "2" border="5" align ="center"> <img src="images/contactbanner.jpg" height="200 px" align="middle"></img></tr>
+</table>
+<br></br>
+<form name="theform">
+<table width="15%"  align=center border="0">
+ 
+	 <tr>
+		<td >Name</td>
+		<td><input type="text"   placeholder ="Name"  id="userName"></td>
+	</tr>
+	<tr>
+		<td  >Email</td>
+		
+		<td  ><input type="text" placeholder ="Email"   id="userEmail"></td>
+	</tr>
+	<tr>
+		<td  >City</td>
+		<td  >
+			<select name="cities" id="city" >
+			<option value="" disabled selected hidden ></option>
+			<option value="Jaipur">Jaipur</option>
+			<option value="Bhilwara">Bhilwara</option>
+			<option value="Ajmer">Ajmer</option>
+			<option value="Jodhpur">Jodhpur</option>
+			<option value="Kota">Kota</option>
+			<option value="Udaipur">Udaipur</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td >
+			<input type="text" readonly id="set" style="display:none">
+		</td>
+	</tr>
+	<tr>
+		<td >Organization Name</td>
+		
+		<td ><input type="text"  placeholder ="Organization name"    id="userOrgName"></td>
+	</tr>
+	<tr>
+		<td  >Contact Number</td>
+		
+		<td  ><input type="tel"  placeholder ="Contact number"     id="userContactNo"></td>
+	</tr>
+	<tr>
+		<td  >Message</td>
+		<td><textarea name="Text1"  id="userMessage"  placeholder="message-box" rows="3"></textarea></td>
+	</tr>
+	<tr>
+	<td><button id="submitbutton" type="button"  onclick="validate()" value="Submit">submit</button></td>
+	<td><button id="submitbutton" type="button"  onclick="clearData()" >clear</button></td>
+	</tr>
+
+</table>
+</form>	
+<p id="result" style="text-align:center;"></p>
+<hr>
+<table align="center">
+<tr>
+<td>&copy;All Rights Reserved | Metacube Training</td>
+</tr>
+</table>
+<body>
+</html>
