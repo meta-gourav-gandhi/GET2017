@@ -60,10 +60,23 @@ input{
     padding-left: 20px;
 	margin:0px 20px;
 }
+
+table .entries {
+	border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width:200px;
+    height: 35px;
+    margin-bottom:1px;
+    border-radius: 5px;
+    padding-left: 20px;
+	margin:0px 20px;
+	
+}
 #includecontent{
 	padding:60px 350px;
 	text-align:center;
-}
+}	
 #heading{
 	color:#FFFFFF;
 	font-size:20px;
@@ -72,7 +85,11 @@ input{
 }
 
 
-#result{
+#result	{
+	color:#FFFFFF;
+}
+
+#output{
 	color:#FFFFFF;
 }
 
