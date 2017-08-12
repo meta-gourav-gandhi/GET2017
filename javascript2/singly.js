@@ -34,7 +34,7 @@ function SinglyLinkedList(){
 			}
 			
 			document.getElementById("result").innerHTML= document.getElementById("content").value + " has been added to the list";
-			
+			 
 		}
 		else
 		{
@@ -42,23 +42,41 @@ function SinglyLinkedList(){
 		}
 	entry.value="";
 	entry.focus();
+	deleteTab();
 }
+
+
 	this.printData=function(){
 		var counter=1;
+		var table=document.getElementById("myTable");
+				table.style.display="inline-block";
 		if(this.start!=null){
 			this.temp=this.start;
 			var text="";
+			document.getElementById("result").innerHTML ="The elements are :- <br> ";
+			
 			while(this.temp.next!=null){
-				text += counter++ + "<span> -->  </span> " + this.temp.data+ " <br> ";
+				
+				var row = table.insertRow();
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				cell1.innerHTML = counter++;
+				cell2.innerHTML = this.temp.data;
 				this.temp=this.temp.next;
 			}
-			text+= counter++ + "<span> -->  </span> " + this.temp.data;
-			document.getElementById("result").innerHTML ="The elements are :- <br> " + text;
 				
+				var row = table.insertRow();
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				cell1.innerHTML = counter++;
+				cell2.innerHTML = this.temp.data;
+		
 			}
 			else{
 				document.getElementById("result").innerHTML="there are no values in list."
 			}
+			
+			
 }
 	
 	
@@ -105,6 +123,7 @@ function SinglyLinkedList(){
 		
 		document.getElementById("content").value="";
 		document.getElementById("content").focus();
+		deleteTab();
 	}
 	
 	
@@ -151,7 +170,16 @@ function SinglyLinkedList(){
 		document.getElementById("result").innerHTML="Enter some value to search."
 	}
 	
+	deleteTab();
+	
 }
+		
+	function deleteTab(){
+		
+		var table = document.getElementById("myTable");
+    table.innerHTML="";
+		table.style.display="none";
+	}	
 	
 };
 
