@@ -104,8 +104,6 @@ function checkCity(){
 	if(!x.value=="")
 	{	
 		localStorage.setItem("cityname", x.value);
-		//document.getElementById("set").style.display='block';
-		//document.getElementById("set").value ="selected city is " + x.value;
 		return true;
 	}
 	else
@@ -117,30 +115,14 @@ function checkCity(){
 	}
 }
 
- /* function checkform(){
-        var f = document.forms["theform"].elements;
-        var cansubmit = true;
-		document.getElementById("submitbutton").disabled = true;
-        for (var i = 0; i < f.length; i++) {
-            if (f[i].value.length == 0) cansubmit = false;
-        }
-
-        if (cansubmit) {
-            document.getElementById('submitbutton').disabled = false;
-        }
-
-} */
-
 window.onload=function(){
 	
-	//var name= document.getElementById("userName");
 		document.getElementById("userName").value = localStorage.getItem("name");
 		document.getElementById("userEmail").value = localStorage.getItem("mail");
 		document.getElementById("city").value = localStorage.getItem("cityname");
 		document.getElementById("userMessage").value = localStorage.getItem("message");
 		document.getElementById("userContactNo").value = localStorage.getItem("phone");
 		document.getElementById("userOrgName").value = localStorage.getItem("orgname");
-		//document.getElementById("user").value = localStorage.getItem("name");
 	
 } 
 
@@ -159,7 +141,7 @@ function validate(){
 		document.getElementById("userMessage").value = "";
 		document.getElementById("userContactNo").value = "";
 		document.getElementById("userOrgName").value = "";
-		document.getElementById("result").innerHTML="your form has been submitted";
+		document.getElementById("output").innerHTML="your form has been submitted";
 
 	}
 }
