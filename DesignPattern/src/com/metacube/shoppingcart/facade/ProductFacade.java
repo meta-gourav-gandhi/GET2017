@@ -31,7 +31,7 @@ public class ProductFacade {
 
 	/**
 	 * @param code of the product to retrive  particular product
-	 * @return the product
+	 * @return the product of the entered code
 	 */
 	public static Product getProduct(String code) {
 		// TODO Auto-generated method stub
