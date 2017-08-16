@@ -1,0 +1,6 @@
+121,Levis-Jeans,1500.00
+122,Reebok-sneakers,1700.00
+123,Cargos,2500.00
+124,Levis-shirts,1200.00
+125,Reebok-tees,700.00
+126,Puma-shoes,3500.00
