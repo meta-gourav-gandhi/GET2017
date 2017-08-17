@@ -35,7 +35,7 @@ public class ProductFacade {
 	 */
 	public static Product getProduct(String code) {
 		// TODO Auto-generated method stub
-		return InMemoryProductDao.getInstance().retreive(code);
+		return (Product) ProductFactory.getInstance(FileHandling.readType(Constants.FILELOC)).retreive(code);
 	}
 
 }
