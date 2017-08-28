@@ -28,5 +28,20 @@ public class DesignationFactory {
 		}
 		return "";
 	}
+	
+	public static int getPriority(char ch) {
+		switch (ch) {
+		case 'C':
+			return 4;
+		case 'P':
+			return 3;
+		case 'G':
+			return 2;
+		case 'U':
+			return 1;
+		default:
+			return -1;
+		}
+	}
 
 }
