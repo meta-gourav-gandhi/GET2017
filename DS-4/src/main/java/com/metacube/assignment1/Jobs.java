@@ -1,4 +1,4 @@
-package main.java.com.metacube.assignment1;
+package com.metacube.assignment1;
 
 @SuppressWarnings("rawtypes")
 public class Jobs implements Comparable {

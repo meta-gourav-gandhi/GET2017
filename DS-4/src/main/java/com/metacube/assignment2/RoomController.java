@@ -1,4 +1,4 @@
-package main.java.com.metacube.assignment2;
+package com.metacube.assignment2;
 import java.util.HashMap;
 
 /**

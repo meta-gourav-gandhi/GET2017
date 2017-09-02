@@ -1,7 +1,7 @@
 /**
  * 
  */
-package main.java.com.metacube.assignment1;
+package com.metacube.assignment1;
 
 /**
  * @author gourav gandhi
