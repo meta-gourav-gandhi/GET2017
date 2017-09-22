@@ -120,8 +120,8 @@
 																<li>
 																	<span class="glyphicon glyphicon-align-left"></span>
 																	Lorem ipsum dolor sit amet ipsum dolor sit amet
-																	<a href="#" data-toggle="tooltip" data-placement="top" title="tooltip on top">
-																	<button class="btn btn-warning btn-xs">Just Now</button></a>
+																
+																	<button class="btn btn-warning btn-xs" data-toggle="tooltip" data-placement="top" title="tooltip on top">Just Now</button>
 																</li>
 																
 																<hr>
@@ -215,18 +215,18 @@
 											
 											 <div class="item window2">
 											  <div class="mytab">
-												 <ul class="nav nav-tabs row">
+												 <ul class="nav nav-tabs ">
 													
-													<li class="active col-xs-3"><a data-toggle="tab" href="#home">Tab1</a></li>
-													
-													
-													<li class="col-xs-3"><a data-toggle="tab" href="#menu1">Tab2</a></li>
+													<li class="active "><a data-toggle="tab" href="#home">Tab1</a></li>
 													
 													
-													<li class="col-xs-3"><a data-toggle="tab" href="#menu2">Tab3</a></li>
+													<li class=""><a data-toggle="tab" href="#menu1">Tab2</a></li>
 													
 													
-													<li class="col-xs-3"><a data-toggle="tab" href="#menu3">Tab4</a></li>
+													<li class=""><a data-toggle="tab" href="#menu2">Tab3</a></li>
+													
+													
+													<li class=""><a data-toggle="tab" href="#menu3">Tab4</a></li>
 												  
 												  </ul>
 
@@ -519,8 +519,22 @@
 	
 <script>
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
+    $("button").tooltip({
+			
+			placement:(function(){
+			var width = window.innerWidth;
+			var position="top";
+			if (width<768){
+			position="left";
+			if(width>560 && width <600)
+			{
+			position="bottom";
+			}
+			}
+			return position;
+		})   
+	});
+	});
 
 
 function toggleIcon(e) {
@@ -531,6 +545,8 @@ function toggleIcon(e) {
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+
 
 </script>
 	
