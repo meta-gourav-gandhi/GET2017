@@ -1,0 +1,18 @@
+<header>
+<h1>{{title}}</h1>
+</header>
+<div class="container">
+    
+   <div class="mypanel"> 
+    <div class="col-md-3" *ngFor="let Product of products">
+        <div class="panel panel-primary text-center">
+            <div class="panel-heading">Product Id : {{Product.id}}</div>
+            <div class="panel-body">
+                  <p>Product name : {{Product.name}}</p>
+                  <p>Rs : {{Product.price}}</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
