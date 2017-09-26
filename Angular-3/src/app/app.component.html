@@ -1,0 +1,20 @@
+<header>
+    <h1>{{title}}</h1>
+</header>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav" >
+          <li><a routerLink="/dashboard" routerLinkActive="active" >Dashboard</a></li>
+          <li><a routerLink="/products" routerLinkActive="active" >Products</a></li>
+          <li><a routerLink="/contactus" routerLinkActive="active">Contact Us</a></li>
+          <li><a routerLink="/cart" routerLinkActive="active">Cart</a></li>
+          <li class="nav-right"><product-search></product-search></li>
+        </ul>
+        
+      </div>
+      </div>
+  </nav>
+  <div>
+      <router-outlet></router-outlet>
+  </div>
