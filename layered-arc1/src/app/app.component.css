@@ -1,0 +1,38 @@
+header{
+    background-color: #1976D2;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+nav li a:hover{
+    color:#000000;
+    background-color: #1976D2;
+   }
+   
+#active{
+       background-color: #1976D2;
+   }
+
+.navbar-inverse .navbar-nav>li>a:active{
+    background-color: #1976D2;
+   }
+   
+.navbar-inverse{
+    border: 0px;
+    border-radius:0px;
+   }
+
+.navbar-inverse .navbar-nav>li>a{
+    color:#FFFFFF;
+   }
+
+nav a.active{
+    background-color: #1976D2;
+}
